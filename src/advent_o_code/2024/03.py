@@ -1,4 +1,3 @@
-import pandas as pd
 import os
 
 # The engineers are trying to figure out which reports are safe. The Red-Nosed reactor safety systems can only tolerate levels that are either gradually increasing or gradually decreasing. So, a report only counts as safe if both of the following are true:
@@ -43,6 +42,5 @@ if __name__ == "__main__":
             previous_observation = observation
                 
         if safe:
-            print(observations)
             safe_count += 1
     print(safe_count)
